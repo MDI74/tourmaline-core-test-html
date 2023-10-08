@@ -1,0 +1,46 @@
+.menu {
+
+  &__list {
+    display: flex;
+  }
+
+  &__button {
+    $border-width: 1px;
+    width: calc(60px - $border-width);
+    height: 58px;
+    border-left: $border-width solid #DDDDDD;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    background-color: #ffff;
+    position: relative;
+
+    &--burger {
+      &::after {
+        content: "";
+        height: 1.65px;
+        width: 15.62px;
+        background-color: #000000;
+        position: absolute;
+        top: 22.12px;
+        left: 21.19px;
+        box-shadow: 0 6.1px 0 0 #000000, 0 11.9px 0 0 #000000;
+      }
+    }
+
+    &--search {
+      &::after {
+        content: "";
+        position: absolute;
+        background-size: 100%;
+        height: 15.63px;
+        width: 15.63px;
+        top: 21.19px;
+        left: 21.19px;
+        border: none;
+        background-image: url(/src/assets/icon-search.svg);
+        right: 10px;
+      }
+    }
+  }
+}

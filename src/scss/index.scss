@@ -2,6 +2,7 @@
 @import "variables";
 @import "components/header";
 @import "components/logo";
+@import "components/nav-menu";
 
 html {
   box-sizing: border-box;
@@ -15,7 +16,6 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   background-color: #ffff;
-  border: 1px solid #DDDDDD;
 }
 
 .container {
