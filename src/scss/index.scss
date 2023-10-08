@@ -1,2 +1,23 @@
 @import "normalize.css";
 @import "variables";
+@import "components/header";
+@import "components/logo";
+
+html {
+  box-sizing: border-box;
+}
+
+*,*::after,*::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: #ffff;
+  border: 1px solid #DDDDDD;
+}
+
+.container {
+  padding: 0 15px;
+}
