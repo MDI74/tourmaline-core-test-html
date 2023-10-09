@@ -1,10 +1,12 @@
-@import "media-mixin.scss";
 @import "reset";
-
 @import "variables";
-@import "components/header";
+
+@import "layout/header";
+@import "layout/nav-menu";
+@import "layout/card-block";
+
 @import "components/logo";
-@import "components/nav-menu";
+@import "components/title";
 
 html {
   box-sizing: border-box;
@@ -21,5 +23,5 @@ body {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 17px;
 }

@@ -96,16 +96,6 @@ legend {
   }
 }
 
-.logo__link {
-  margin-left: 15px;
-}
-@media (min-width: 992px) {
-  .logo img {
-    height: 35px;
-    width: 35px;
-  }
-}
-
 @font-face {
   font-family: "Roboto";
   font-weight: 700;
@@ -206,6 +196,22 @@ legend {
   }
 }
 
+.logo__link {
+  margin-left: 15px;
+}
+@media (min-width: 992px) {
+  .logo img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -221,7 +227,7 @@ body {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 17px;
 }
 
 /*# sourceMappingURL=index.css.map */
