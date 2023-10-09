@@ -1,0 +1,12 @@
+.card-block {
+
+  &__title {
+    margin-top: 118px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 76px;
+  }
+}

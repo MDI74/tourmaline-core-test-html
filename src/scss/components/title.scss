@@ -1,5 +1,7 @@
+@import "../variables";
+
 .title {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 46px
+  font-size: 46px;
+  color: $dark_grey;
 }

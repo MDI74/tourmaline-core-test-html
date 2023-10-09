@@ -123,7 +123,6 @@ legend {
   display: flex;
   align-items: center;
   list-style: none;
-  font-family: "Roboto", serif;
   font-size: 14px;
 }
 @media (min-width: 992px) {
@@ -196,6 +195,15 @@ legend {
   }
 }
 
+.card-block__title {
+  margin-top: 118px;
+}
+.card-block__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 76px;
+}
+
 .logo__link {
   margin-left: 15px;
 }
@@ -207,9 +215,93 @@ legend {
 }
 
 .title {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 46px;
+  color: #131313;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+.card__image {
+  height: 190px;
+  border-right: 12px solid #753BBD;
+  position: relative;
+  z-index: 0;
+}
+.card__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-description {
+  border: 1px solid #DDDDDD;
+  border-top: none;
+  padding: 0 20px;
+  color: #131313;
+}
+.card-description__header {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 20px;
+}
+.card-description__type {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+}
+.card-description__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 115%;
+  letter-spacing: 0.033em;
+}
+.card-description__footer {
+  font-size: 10px;
+  line-height: 115%;
+  margin-top: 30px;
+  margin-bottom: 15.4px;
+}
+.card-description__footer > *:not(:last-child) {
+  margin-bottom: 9px;
+}
+.card-description__week {
+  display: flex;
+  gap: 6px;
+}
+.card-description__week::before {
+  content: "";
+  background-image: url(/src/assets/calendar-icon.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+}
+.card-description__price {
+  display: flex;
+  gap: 6px;
+}
+.card-description__price::before {
+  content: "";
+  background-image: url(/src/assets/credit-card-icon.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+}
+
+.calendar-icon {
+  background-image: url(/src/assets/calendar-icon.svg);
+  width: 15px;
+  height: 15px;
+}
+
+.credit-card-icon {
+  background-image: url(/src/assets/credit-card-icon.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
 }
 
 html {
@@ -224,6 +316,7 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   background-color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
