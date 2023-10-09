@@ -83,6 +83,10 @@
           left: calc(21.19px - $border-width);
         }
       }
+
+      @include _992() {
+        margin-left: 40px;
+      }
     }
   }
 }
