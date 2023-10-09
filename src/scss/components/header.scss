@@ -1,3 +1,5 @@
+@import "../media-mixin.scss";
+
 .header {
   &__inner {
     max-height: 60px;
@@ -5,5 +7,9 @@
     justify-content: space-between;
     align-items: center;
     border: 1px solid #DDDDDD;
+
+    @include _992 {
+      max-height: 53px;
+    }
   }
 }

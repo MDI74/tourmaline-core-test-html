@@ -1,7 +1,35 @@
+@import "../media-mixin.scss";
+@import "../fonts";
+
 .menu {
+  display: flex;
+  align-items: center;
+
+  &__list-button {
+    display: flex;
+    list-style: none;
+  }
 
   &__list {
     display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: "Roboto", serif;
+    font-size: 14px;
+
+    @include _992() {
+      gap: 42px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: none;
+    color: #000000;
+
+    @include _992() {
+      display: block;
+    }
   }
 
   &__button {
@@ -15,6 +43,11 @@
     background-color: #ffff;
     position: relative;
 
+    @include _992() {
+      width: calc(53px - $border-width);
+      height: 51px;
+    }
+
     &--burger {
       &::after {
         content: "";
@@ -23,8 +56,12 @@
         background-color: #000000;
         position: absolute;
         top: 22.12px;
-        left: 21.19px;
+        left: calc(22.19px - $border-width);
         box-shadow: 0 6.1px 0 0 #000000, 0 11.9px 0 0 #000000;
+      }
+
+      @include _992() {
+        display: none;
       }
     }
 
@@ -36,10 +73,15 @@
         height: 15.63px;
         width: 15.63px;
         top: 21.19px;
-        left: 21.19px;
+        left: calc(22.19px - $border-width);
         border: none;
         background-image: url(/src/assets/icon-search.svg);
         right: 10px;
+
+        @include _992() {
+          top: 19.19px;
+          left: calc(21.19px - $border-width);
+        }
       }
     }
   }
