@@ -2,13 +2,24 @@
 
   &__content {
     margin-top: 121px;
+    max-width: 875px;
+
+    @include _1440 {
+      margin-top: 80px;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
-    border: 1px solid #DDDDDD;
-    border-top: none;
+
+    & > * {
+      border: 1px solid #DDDDDD;
+    }
+
+    & > *:not(:first-child) {
+      border-top: none;
+    }
   }
 }

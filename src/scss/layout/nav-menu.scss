@@ -15,9 +15,10 @@
     align-items: center;
     list-style: none;
     font-size: 14px;
+    line-height: 128%;
 
     @include _992() {
-      gap: 42px;
+      gap: 40px;
     }
   }
 
