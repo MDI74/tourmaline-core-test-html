@@ -9,9 +9,10 @@
 
   &__image {
     height: 190px;
-    border-right: 12px solid #753BBD;
+    border-right: 10px solid #753BBD;
     position: relative;
     z-index: 0;
+    margin: 0 -1px;
 
     & .card-mark {
       z-index: 1;
@@ -39,10 +40,9 @@
 }
 
 .card-description {
-  border: 1px solid #DDDDDD;
-  border-top: none;
   padding: 0 20px;
   color: $dark_grey;
+  border-bottom: 1px solid #DDDDDD;
 
   &__header {
     display: flex;
@@ -62,7 +62,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 115%;
-    letter-spacing: .033em;
   }
 
   &__footer {
@@ -82,7 +81,7 @@
 
     &::before {
       content: "";
-      background-image: url(/src/assets/calendar-icon.svg);
+      background-image: url(/images/calendar-icon.svg);
       background-repeat: no-repeat;
       width: 15px;
       height: 15px;
@@ -95,7 +94,7 @@
 
     &::before {
       content: "";
-      background-image: url(/src/assets/credit-card-icon.svg);
+      background-image: url(/images/credit-card-icon.svg);
       background-repeat: no-repeat;
       width: 15px;
       height: 15px;

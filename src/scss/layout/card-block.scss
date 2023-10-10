@@ -1,12 +1,14 @@
 .card-block {
 
-  &__title {
-    margin-top: 118px;
+  &__content {
+    margin-top: 121px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    margin-top: 76px;
+    margin-top: 80px;
+    border: 1px solid #DDDDDD;
+    border-top: none;
   }
 }
