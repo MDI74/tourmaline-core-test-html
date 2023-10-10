@@ -99,17 +99,17 @@ legend {
 @font-face {
   font-family: "Roboto";
   font-weight: 700;
-  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("./fonts/roboto/Roboto-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 500;
-  src: url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("./fonts/roboto/Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
-  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("./fonts/roboto/Roboto-Regular.ttf") format("truetype");
 }
 .menu {
   display: flex;
@@ -181,7 +181,7 @@ legend {
   top: 21.19px;
   left: 21.19px;
   border: none;
-  background-image: url(../images/icon-search.svg);
+  background-image: url(./images/icon-search.svg);
   right: 10px;
 }
 @media (min-width: 992px) {
@@ -343,7 +343,7 @@ legend {
 }
 .card-description__week::before {
   content: "";
-  background-image: url(../images/calendar-icon.svg);
+  background-image: url(./images/calendar-icon.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -354,7 +354,7 @@ legend {
 }
 .card-description__price::before {
   content: "";
-  background-image: url(../images/credit-card-icon.svg);
+  background-image: url(./images/credit-card-icon.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
