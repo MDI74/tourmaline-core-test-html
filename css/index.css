@@ -181,7 +181,7 @@ legend {
   top: 21.19px;
   left: 21.19px;
   border: none;
-  background-image: url(/images/icon-search.svg);
+  background-image: url(../images/icon-search.svg);
   right: 10px;
 }
 @media (min-width: 992px) {
@@ -343,7 +343,7 @@ legend {
 }
 .card-description__week::before {
   content: "";
-  background-image: url(/images/calendar-icon.svg);
+  background-image: url(../images/calendar-icon.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -354,7 +354,7 @@ legend {
 }
 .card-description__price::before {
   content: "";
-  background-image: url(/images/credit-card-icon.svg);
+  background-image: url(../images/credit-card-icon.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
