@@ -75,7 +75,7 @@
         top: 21.19px;
         left: calc(22.19px - $border-width);
         border: none;
-        background-image: url(/images/icon-search.svg);
+        background-image: url(images/icon-search.svg);
         right: 10px;
 
         @include _992() {
