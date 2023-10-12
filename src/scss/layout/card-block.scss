@@ -15,7 +15,7 @@
     margin-top: 80px;
 
     & > * {
-      border: 1px solid #DDDDDD;
+      border: 1px solid $border-color;
     }
 
     & > *:not(:first-child) {
