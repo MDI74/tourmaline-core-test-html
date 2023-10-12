@@ -361,6 +361,12 @@ legend {
   background-color: #F3F3F3;
   border-left: 15px solid #05C3DE;
 }
+@media (min-width: 768px) {
+  .post__description {
+    flex: 70% 1 0;
+    padding: 0 64px;
+  }
+}
 @media (min-width: 1024px) {
   .post__description {
     flex: 58% 1 0;

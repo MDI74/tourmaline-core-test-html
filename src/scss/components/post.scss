@@ -11,6 +11,11 @@
     background-color: $light-grey;
     border-left: 15px solid $light-blue;
 
+    @include _768 {
+      flex: 70% 1 0;
+      padding: 0 64px;
+    }
+
     @include _1024 {
       flex: 58% 1 0;
       padding: 0 84px;
