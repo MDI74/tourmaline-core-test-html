@@ -4,6 +4,12 @@
   }
 }
 
+@mixin _1024{
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin _992 {
   @media (min-width: 992px) {
     @content;

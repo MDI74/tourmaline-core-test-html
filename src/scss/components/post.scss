@@ -8,20 +8,43 @@
 
   &__description {
     flex: 85% 1 0;
-    min-width: 215px;
     padding: 0 30px;
     background-color: $light-grey;
-    border-left: 15px solid $light-blue ;
+    border-left: 15px solid $light-blue;
+
+    @include _1024 {
+      flex: 58% 1 0;
+      padding: 0 84px;
+    }
+
+    @include _1440 {
+      border-left: none;
+    }
 
     &-header {
       display: flex;
       flex-direction: column;
       gap: 10px;
       margin-top: 30px;
+
+      @include _1440 {
+        margin-top: 80px;
+        gap: 30px;
+      }
     }
 
     &-info {
       margin-top: 20px;
+
+      @include _1440 {
+        margin-top: 30px;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
     }
   }
 
@@ -33,10 +56,36 @@
     }
   }
 
+  &__image-decoration {
+    display: none;
+    border-right: 40px solid $light-blue;
+
+    @include _1440 {
+      display: block;
+    }
+
+    & img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   &__title {
     font-size: 26px;
     font-weight: 700;
     line-height: 100%;
+
+    @include _768 {
+      font-size: 28px;
+    }
+
+    @include _1440 {
+      display: flex;
+      align-items: center;
+
+      font-size: 46px;
+    }
   }
 
   &__subtitle {
@@ -44,24 +93,61 @@
     font-weight: 500;
     line-height: 157%;
     color: $grey;
-  }
 
-  &__item {
-    display: flex;
-    border-bottom: 1px solid $border-color;
+    @include _768 {
+      font-size: 14px;
+    }
   }
 
   &__list {
-    & >*:not(:last-child) {
+    & > *:not(:last-child) {
       margin-bottom: 15px;
     }
   }
 
+  &__item {
+    border-bottom: 1px solid $border-color;
+
+    &-content {
+      display: flex;
+      padding-bottom: 10px;
+
+      @include _768 {
+        align-items: center;
+      }
+
+      & > .arrow-icon {
+        margin-left: auto;
+        margin-right: 15px;
+      }
+    }
+  }
+
   &__link {
-    margin: 0 10px 10px 12px;
+    margin: 0 10px 0 12px;
     font-size: 16px;
     font-weight: 500;
     line-height: 138%;
+
+    &--small-screen {
+      display: block;
+
+      @include _1440 {
+        display: none;
+      }
+    }
+
+    &--big-screen {
+      display: none;
+
+      @include _1440 {
+        display: block;
+      }
+    }
+
+    @include _768 {
+      font-size: 18px;
+    }
 
     & > span {
       color: $dark-grey;
@@ -79,6 +165,9 @@
     font-weight: 700;
     line-height: 128%;
     max-height: 48px;
-    margin-bottom: 30px;
+
+    @include _1440 {
+      display: none;
+    }
   }
 }
