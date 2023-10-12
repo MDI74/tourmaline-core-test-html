@@ -15,13 +15,6 @@
 @import "components/icon";
 @import "components/show-more";
 
-html {
-  box-sizing: border-box;
-}
-
-*,*::after,*::before {
-  box-sizing: inherit;
-}
 
 body {
   min-width: 320px;
