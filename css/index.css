@@ -182,7 +182,7 @@ legend {
   top: 21.19px;
   left: 21.19px;
   border: none;
-  background-image: url(/images/icon-search.svg);
+  background-image: url(../images/icon-search.svg);
   right: 10px;
 }
 @media (min-width: 992px) {
