@@ -1,6 +1,3 @@
-@import "../media-mixin";
-@import "../fonts";
-
 .menu {
   display: flex;
   align-items: center;
@@ -26,7 +23,7 @@
   &__link {
     text-decoration: none;
     display: none;
-    color: #000000;
+    color: $black;
 
     @include _992() {
       display: block;
@@ -41,7 +38,7 @@
     border-bottom: none;
     border-right: none;
     border-top: none;
-    background-color: #ffff;
+    background-color: $white;
     position: relative;
 
     @include _992() {
@@ -54,11 +51,11 @@
         content: "";
         height: 1.65px;
         width: 15.62px;
-        background-color: #000000;
+        background-color: $black;
         position: absolute;
         top: 22.12px;
         left: calc(22.19px - $border-width);
-        box-shadow: 0 6.1px 0 0 #000000, 0 11.9px 0 0 #000000;
+        box-shadow: 0 6.1px 0 0 $black, 0 11.9px 0 0 $black;
       }
 
       @include _992() {

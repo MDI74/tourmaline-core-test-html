@@ -96,21 +96,6 @@ legend {
   }
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-weight: 700;
-  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  src: url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 400;
-  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
-}
 .menu {
   display: flex;
   align-items: center;
@@ -461,7 +446,11 @@ legend {
 }
 .post__item-content > .arrow-icon {
   margin-left: auto;
-  margin-right: 15px;
+}
+@media (min-width: 1440px) {
+  .post__item-content > .arrow-icon {
+    margin-right: 15px;
+  }
 }
 .post__link {
   margin: 0 10px 0 12px;

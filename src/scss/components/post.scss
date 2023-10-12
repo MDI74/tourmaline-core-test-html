@@ -118,7 +118,10 @@
 
       & > .arrow-icon {
         margin-left: auto;
-        margin-right: 15px;
+
+        @include _1440 {
+          margin-right: 15px;
+        }
       }
     }
   }
