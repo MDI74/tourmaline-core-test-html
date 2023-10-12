@@ -83,6 +83,21 @@ legend {
   display: block;
 }
 
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
 .header__inner {
   max-height: 60px;
   display: flex;
