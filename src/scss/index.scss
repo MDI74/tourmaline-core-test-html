@@ -1,2 +1,36 @@
-@import "normalize.css";
+@import "reset";
 @import "variables";
+@import "fonts";
+@import "media-mixin";
+
+@import "layout/header";
+@import "layout/nav-menu";
+@import "layout/card-block";
+@import "layout/post-block";
+
+@import "components/logo";
+@import "components/title";
+@import "components/card";
+@import "components/post";
+@import "components/icon";
+@import "components/show-more";
+
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: $white;
+  font-family: "Roboto", system-ui;
+}
+
+.container {
+  padding: 0 18px 0 17px;
+
+  @include _992 {
+    padding: 0 50px;
+  }
+
+  @include _1440 {
+    padding: 0 100px;
+  }
+}

@@ -1,0 +1,21 @@
+.show-more {
+  display: none;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 74px;
+
+  @include _1440 {
+    display: block;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    width: 40px;
+    height: 2px;
+    background-color: $border-color;
+  }
+}

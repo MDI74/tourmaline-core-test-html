@@ -1,0 +1,13 @@
+.logo {
+  &__link {
+    margin-left: 15px;
+  }
+
+  @include _992 {
+    & img {
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
+

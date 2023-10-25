@@ -1,0 +1,13 @@
+.header {
+  &__inner {
+    max-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $border-color;
+
+    @include _992 {
+      max-height: 53px;
+    }
+  }
+}

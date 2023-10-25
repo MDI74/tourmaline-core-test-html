@@ -1,0 +1,90 @@
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__list-button {
+    display: flex;
+    list-style: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    line-height: 128%;
+    font-weight: 500;
+
+    @include _992() {
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: none;
+    color: $black;
+
+    @include _992() {
+      display: block;
+    }
+  }
+
+  &__button {
+    $border-width: 1px;
+    width: calc(60px - $border-width);
+    height: 58px;
+    border-left: $border-width solid $border-color;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    background-color: $white;
+    position: relative;
+
+    @include _992() {
+      width: calc(53px - $border-width);
+      height: 51px;
+    }
+
+    &--burger {
+      &::after {
+        content: "";
+        height: 1.65px;
+        width: 15.62px;
+        background-color: $black;
+        position: absolute;
+        top: 22.12px;
+        left: calc(22.19px - $border-width);
+        box-shadow: 0 6.1px 0 0 $black, 0 11.9px 0 0 $black;
+      }
+
+      @include _992() {
+        display: none;
+      }
+    }
+
+    &--search {
+      &::after {
+        content: "";
+        position: absolute;
+        background-size: 100%;
+        height: 15.63px;
+        width: 15.63px;
+        top: 21.19px;
+        left: calc(22.19px - $border-width);
+        border: none;
+        background-image: url(/images/icon-search.svg);
+        right: 10px;
+
+        @include _992() {
+          top: 19.19px;
+          left: calc(21.19px - $border-width);
+        }
+      }
+
+      @include _992() {
+        margin-left: 40px;
+      }
+    }
+  }
+}
